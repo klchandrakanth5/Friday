@@ -1,3 +1,5 @@
-num1 = 1
-num2 = 2
-print(num1 + num2)
+num = 1
+while num<=11:
+    print(num,end=" ")
+    num = num + 1
+
