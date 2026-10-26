@@ -1,5 +1,7 @@
-num = int(input("Enter the number :\n"))
-while num <= 12:
-    if num % 2 == 0:
-        print(num,end=" ")
-    num+=1
+num = 4567
+count = 0
+while num>=count:
+    print(count)
+    count = count + 1
+
+print(count)
