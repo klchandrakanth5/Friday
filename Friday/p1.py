@@ -1,5 +1,6 @@
-sum_1 = 0
+count = 0
 for i in range(1,101):
-    sum_1+=i
-
-print("the total sum of the number is ",sum_1)
+    if i % 5 == 0:
+        count = count + 1
+        i = i + 1
+    
