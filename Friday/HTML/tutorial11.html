@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Geolocation Example</title>
+</head>
+<body>
+
+    <h2>Find My Location</h2>
+    <p>Simple definition
+Geolocation API helps a website find the user's current geographical location (latitude and longitude).</p>
+    <button onclick="getLocation()">
+        Get My Location
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+        function getLocation() {
+
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+
+                    let latitude = position.coords.latitude;
+                    let longitude = position.coords.longitude;
+
+                    document.getElementById("result").innerHTML =
+                    "Latitude: " + latitude +
+                    "<br>Longitude: " + longitude;
+
+                }
+            );
+
+        }
+    </script>
+<hr>
+    <h2>2. Local Storage API</h2>
+    <p>Local Storage allows a website to save data in the user's browser, even after closing the website or browser.</p>
+     <h2>Save Your Name</h2>
+
+    <input type="text" id="username"
+           placeholder="Enter your name">
+
+    <button onclick="saveName()">
+        Save Name
+    </button>
+
+    <button onclick="showName()">
+        Show Name
+    </button>
+
+    <p id="result"></p>
+
+    <script>
+
+        function saveName() {
+
+            let name = document.getElementById("username").value;
+
+            localStorage.setItem("username", name);
+
+            alert("Name Saved Successfully!");
+
+        }
+
+        function showName() {
+
+            let savedName = localStorage.getItem("username");
+
+            document.getElementById("result").innerHTML =
+                "Welcome " + savedName;
+
+        }
+
+    </script>
+<hr>
+    <h3>Canvas API</h3>
+      <h2>Canvas Drawing</h2>
+
+    <canvas id="myCanvas"
+            width="400"
+            height="250"
+            style="border:1px solid black;">
+    </canvas>
+
+    <script>
+
+        let canvas = document.getElementById("myCanvas");
+
+        let ctx = canvas.getContext("2d");
+
+        // Draw Rectangle
+        ctx.fillStyle = "blue";
+
+        ctx.fillRect(30, 30, 150, 80);
+
+        // Draw Circle
+        ctx.beginPath();
+
+        ctx.arc(270, 70, 40, 0, 2 * Math.PI);
+
+        ctx.fillStyle = "red";
+
+        ctx.fill();
+
+    </script>
+    <h1> This Complete course </h1>
+</body>
+</html>
