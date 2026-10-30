@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Part 2 of tutorial 7 </h1>
+
+    <h2>Radio Button</h2>
+    <p>Simple definition: A radio button allows users to select only ONE option from a group of options.</p>
+    <h3>Select Gender:</h3>
+
+<input type="radio" id="male"
+       name="gender" value="male">
+<label for="male">Male</label>
+
+<input type="radio" id="female"
+       name="gender" value="female">
+<label for="female">Female</label>
+
+<input type="radio" id="other"
+       name="gender" value="other">
+<label for="other">Other</label>
+
+<p>
+    Remember:
+- id identifies an individual input.
+- name groups radio buttons together.
+- value is the data sent to the backend.
+</p>
+<hr>
+    <h3>Checkbox</h3>
+    <p>Simple definition: A checkbox allows users to select one or multiple options.</p>
+    <h3>Select Your Skills:</h3>
+
+<input type="checkbox" id="python"
+       name="skills" value="Python">
+<label for="python">Python</label>
+
+<input type="checkbox" id="django"
+       name="skills" value="Django">
+<label for="django">Django</label>
+
+<input type="checkbox" id="sql"
+       name="skills" value="SQL">
+<label for="sql">SQL</label>
+
+<input type="checkbox" id="javascript"
+       name="skills" value="JavaScript">
+<label for="javascript">JavaScript</label>
+
+<hr>
+    <h3>Dropdown</h3>
+    <p>Simple definition: A dropdown allows users to select an option from a list.</p>
+
+    <label for="country">Select Country:</label>
+
+<select id="country" name="country">
+
+    <option value="">Choose Country</option>
+
+    <option value="india">India</option>
+
+    <option value="usa">USA</option>
+
+    <option value="uk">United Kingdom</option>
+
+    <option value="canada">Canada</option>
+<hr>
+    <h4>Validation</h4>
+    <p>Simple definition: Validation checks whether the user has entered the required information correctly before submitting the form.</p>
+    <form>
+
+    <label for="name">Name:</label>
+
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required>
+
+    <br><br>
+
+    <label for="email">Email:</label>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required>
+
+    <br><br>
+
+    <button type="submit">Register</button>
+
+</form>
+</select>
+</body>
+</html>
