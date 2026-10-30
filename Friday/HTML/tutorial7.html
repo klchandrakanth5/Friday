@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="color: forestgreen;">HTML FORMS</h1>
+    <p>Simple definition: An HTML form is used to collect information from users and send that information to a server.</p>
+    <p>
+        <ol>
+            Think about when you:
+- Create a new Gmail account.
+- Log in to Instagram.
+- Register for a college.
+- Apply for a job.
+- Contact a company through its website.
+        </ol>
+    </p>
+<hr>
+    <h5>There are two important attributes:</h5>
+    <p>1. action :-Specifies where the form data should be sent. </p>
+    <p>2. metod :-Specifies how the data should be sent.</p>
+<hr>
+    <!--Example code -->
+    <form action="/register" method="POST"><br>
+
+    <input type="text" name="username"><br>
+
+    <input type="email" name="email"><br>
+
+    <button type="submit">Register</button>
+<hr>
+        <h5>Input types</h5>
+        <!--Allows user to enter infromation -->
+        <!--There are diffrent type of input are their they include -->
+        <h5>1. Text input</h5>
+       <label>Enter your name</label>
+       <input type="text" name="username">
+
+       <h5>2 . Email input </h5>
+       <label>Enter your Email</label>
+       <input type="email" name="email">
+       <!--  Why use type="email" instead of type="text"? Because the browser performs basic email format validation.-->
+
+       <h5>3. Password input</h5>
+       <label>Enter password</label>
+       <input type="password" name="password">
+
+       <h5>4 number input</h5>
+       <p> Simple definition: what is lable ? :-- A label tells users what information they need to enter in an input field. </p>
+       <label>Enter the number </label>
+       <input type="number" name="number">
+
+       <h5>5 Telephone</h5>
+       <label>Enter the number </label>
+       <input type="tel" name="tel">
+
+       <h5>Date</h5>
+       <label>Enter the date</label>
+       <input type="date" name="date">
+
+       <h5>Placeholder</h5>
+       <p>Simple definition: A placeholder displays a temporary hint inside an input field.</p>
+       <input
+    type="text"
+    placeholder="Enter your full name">
+<hr>
+        <h1>Real time exmple </h1>
+        
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <p>Have any questions? Contact our team.</p>
+
+    <form action="/contact/" method="POST">
+
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <br>
+
+        <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your full name"
+            required>
+
+        <br><br>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <br>
+
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required>
+
+        <br><br>
+
+        <!-- Message Field -->
+        <label for="message">Your Message:</label>
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here"
+            rows="5"
+            required></textarea>
+
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+    
+</form>
+</body>
+</html>
